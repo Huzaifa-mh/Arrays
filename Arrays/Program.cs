@@ -11,5 +11,22 @@
                 System.Console.WriteLine(id);
             }
         }
+
+        int[] array = [1, 2, 4, 7, 10];
+
+        int largest = 0;
+        int secondLargest = 0;
+        foreach (int number in array)
+        {
+            if (number > largest) { 
+                secondLargest = largest;
+                largest = number;
+            }
+            else if (number > secondLargest && number < largest)
+            {
+                secondLargest = number;
+            }
+        }
+        System.Console.WriteLine($"Largest: {largest}, Second Largest: {secondLargest}");
     }
 }
