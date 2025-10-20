@@ -28,5 +28,13 @@
             }
         }
         System.Console.WriteLine($"Largest: {largest}, Second Largest: {secondLargest}");
+
+        int sum = 0, a = 10, b = 15;
+
+        for(int i = 0;i <5; i++)
+        {
+            sum += a * b;
+            Console.WriteLine(sum);
+        }
     }
 }
